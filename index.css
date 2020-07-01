@@ -13,6 +13,7 @@ section.ist{;width: 1170px;}
         font-family: arial
         ;text-transform: capitalize;
         background-image: url('images/header-bg.png')
+        ;animation-name: mymove;animation-duration: 3s;transition: all 3s;
     
     
     }
@@ -22,7 +23,8 @@ section.ist{;width: 1170px;}
     ;height: 400px;margin: auto;
     font-family: arial
     ;text-transform: capitalize;
-    background-image: url('images/biography-bg.png')
+    background-image: url('images/biography-bg.png');animation-name: mymove;animation-duration: 3s;transition: all 3s;
+   
 }
 
 #bosss{width: 1170px;padding: 20px
@@ -83,5 +85,11 @@ a{text-decoration: none;}
     margin-right: 350px;padding: 5px;
     margin-top: 63px;border-radius: 10px;
     color: white;}
-
-footer{text-align: center;font-size: 20px;}
+footer:hover{color: white;background: black;}
+footer{text-align: center;font-size: 20px;background: rgba(240, 11, 49, 0.178);}
+a:hover{background: repeating-linear-gradient(red,black);color: #00fc7e;}
+.son1 :hover{transform: scale(1.2);background: ;}
+.son2 :hover{transform: scale(1.2);}
+.son3 :hover{transform: scale(1.2);}
+.bassaboss :hover{transform: scale(1.2);background:rgb(41, 39, 38);}
+@keyframes mymove{from{transform:scale(0.1)};to{transform: scaleZ(1.2);}}
